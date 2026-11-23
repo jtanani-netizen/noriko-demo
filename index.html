@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORIKO Handroll Bar — Sushi Counter in West Loop, Chicago IL</title>
+<meta name="description" content="NORIKO Handroll Bar, intimate 20-seat handroll counter below Perilla Fare at 401 N Milwaukee Ave, Chicago. Rated 4.9 on OpenTable. Order on DoorDash.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ef;--bg2:#eae6dc;--card:#fffefa;--ink:#16181d;--ink2:#33363d;--muted:#7c7668;--line:#ddd6c6;--acc:#b3271e;--acc2:#14161a;--onacc:#ffffff;--shadow:0 20px 45px rgba(20,16,8,.14)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;overflow-x:clip}
+img{max-width:100%;display:block}h1,h2,h3{font-family:'Shippori Mincho',serif;font-weight:400}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.demo-ribbon{background:var(--acc2);color:#fff;text-align:center;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;padding:.45rem 1rem}
+header.site{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
+.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);min-width:0}
+.logo-mark{width:46px;height:46px;border-radius:50%;background:var(--acc);color:var(--onacc);display:grid;place-items:center;font-family:'Shippori Mincho',serif;font-size:1.25rem;flex:none}
+.logo b{font-family:'Shippori Mincho',serif;font-size:1.35rem;display:block;line-height:1;white-space:nowrap}
+.logo small{font-size:.57rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);font-weight:800}
+nav.main{display:flex;gap:1.7rem}nav.main a{color:var(--ink2);text-decoration:none;font-weight:700;font-size:.93rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;cursor:pointer;font:inherit;font-weight:800;border-radius:999px;padding:.7rem 1.35rem;text-decoration:none;font-size:.95rem}
+.btn-acc{background:var(--acc);color:var(--onacc)}.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-light{background:#fff;color:#141414}
+.hero{position:relative;min-height:88svh;display:flex;align-items:flex-end;color:#fff;isolation:isolate;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2}.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,8,8,.5),rgba(8,8,8,.15) 38%,rgba(8,8,8,.92))}
+.hero-in{padding-top:7rem;padding-bottom:3.4rem}
+.hero .kicker{color:#ffd98a;font-weight:800;letter-spacing:.3em;text-transform:uppercase;font-size:.78rem}
+.hero h1{font-size:clamp(2.7rem,7.4vw,5rem);line-height:1.03;max-width:16ch;margin:.55rem 0 .9rem}
+.hero p{max-width:56ch;font-size:clamp(1.02rem,1.7vw,1.2rem)}
+.hero-rating{display:inline-flex;align-items:center;gap:.55rem;background:rgba(0,0,0,.45);border:1px solid rgba(255,217,138,.6);border-radius:999px;padding:.42rem .95rem;font-weight:700;font-size:.92rem;margin-top:1.3rem}
+.hero-rating .stars{color:#ffd98a;letter-spacing:.08em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.hero-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+.hbadge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:.35rem .85rem;font-size:.82rem;font-weight:700}
+section{padding:4.2rem 0}.sec-head{max-width:680px;margin-bottom:2rem}
+.sec-head .kicker{color:var(--acc);font-weight:800;letter-spacing:.22em;text-transform:uppercase;font-size:.74rem}
+.sec-head h2{font-size:clamp(2rem,4vw,2.9rem);line-height:1.08;margin:.35rem 0 .55rem}
+.sec-head p{color:var(--muted)}
+.sig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.sig{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.sig .ph img{width:100%;height:210px;object-fit:cover}
+.sig .bd{padding:1.15rem 1.2rem 1.25rem;display:flex;flex-direction:column;gap:.4rem;flex:1}
+.sig h3{font-size:1.35rem;line-height:1.12}.sig p{color:var(--muted);font-size:.92rem;flex:1}
+.price{font-family:'Shippori Mincho',serif;font-size:1.3rem;color:var(--acc)}
+.ask{font-size:.85rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.about-sec{background:var(--bg2);border-block:1px solid var(--line)}
+.about{display:grid;grid-template-columns:.95fr 1.05fr;gap:2.6rem;align-items:center}
+.about-img{border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}.about-img img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3.2}
+.about-points{display:grid;gap:.95rem;margin-top:1.3rem}.about-points li{list-style:none;display:flex;gap:.75rem;align-items:flex-start;min-width:0}
+.about-points .dot{width:27px;height:27px;flex:none;border-radius:50%;border:1.5px solid var(--acc);color:var(--acc);display:grid;place-items:center;font-size:.85rem;margin-top:.08rem}
+.about-points p{color:var(--muted);font-size:.95rem}.about-points b{color:var(--ink)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.tab{border:1.5px solid var(--line);background:transparent;color:var(--ink2);border-radius:999px;padding:.52rem 1.05rem;font:inherit;font-weight:800;font-size:.9rem;cursor:pointer}
+.tab.on{background:var(--acc);border-color:var(--acc);color:var(--onacc)}
+.dish-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:1rem}
+.dish{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.05rem 1.12rem;display:flex;flex-direction:column;gap:.32rem;min-width:0}
+.dish h3{font-size:1.22rem;line-height:1.15}.dish p{color:var(--muted);font-size:.88rem;flex:1}
+.dish .row{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:.5rem;gap:.6rem}
+.note{margin-top:1.5rem;font-size:.86rem;color:var(--muted);border-left:3px solid var(--acc);padding-left:.9rem}
+.rev-sec{background:var(--bg2);border-block:1px solid var(--line)}
+.rev-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:2.4rem;align-items:center}
+.big-score{font-family:'Shippori Mincho',serif;font-size:clamp(4.5rem,9vw,7rem);line-height:.9}
+.big-score .stars{display:block;font-size:clamp(1.5rem,3vw,2.1rem);color:var(--acc);letter-spacing:.18em;margin:.4rem 0}
+.rev-cards{display:grid;gap:1rem}.rev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.3rem 1.4rem}
+.rev .outlet{font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+.rev p{font-family:'Shippori Mincho',serif;font-size:1.18rem;line-height:1.35;margin:.45rem 0 .5rem}.rev small{color:var(--muted);font-weight:700}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.gal figure{border-radius:16px;overflow:hidden;border:1px solid var(--line);min-width:0}
+.gal img{width:100%;height:100%;object-fit:cover;aspect-ratio:1}.gal .wide{grid-column:span 2}.gal .wide img{aspect-ratio:2/1.02}
+.visit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.visit{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.45rem;min-width:0}
+.visit .ic{font-size:1.5rem;margin-bottom:.5rem}.visit h3{font-size:1.3rem;margin-bottom:.3rem}.visit p{color:var(--muted);font-size:.94rem}
+.visit .tel{font-weight:800;color:var(--acc);font-size:1.2rem;margin:.55rem 0;text-decoration:none;display:inline-block}
+.visit a.map{color:var(--acc);font-weight:700;text-decoration:none}
+.qr-sec{text-align:center}.qr-sec .eyebrow{color:var(--acc);letter-spacing:.22em;font-size:.72rem;font-weight:800;text-transform:uppercase}
+.qr-sec h2{font-family:'Shippori Mincho',serif;font-size:clamp(1.9rem,5.5vw,2.7rem);margin:.5rem 0 .7rem}
+.qr-sec p{color:var(--muted);max-width:560px;margin:0 auto;line-height:1.6}
+.qr-card{display:inline-block;background:#fff;border-radius:20px;padding:20px 20px 14px;margin-top:1.6rem;box-shadow:var(--shadow);border:1px solid var(--line);max-width:82vw}
+.qr-card img{width:210px;max-width:100%;height:auto}.qr-card b{display:block;color:#141414;font-size:.8rem;letter-spacing:.14em;margin-top:.6rem}
+.qr-card small{display:block;color:#777;font-size:.72rem;letter-spacing:.08em}
+footer{background:var(--acc2);color:#e8e2d6;padding:3.2rem 0 7rem}.ft{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2rem}
+footer h4{color:#fff;font-family:'Shippori Mincho',serif;font-size:1.3rem;margin-bottom:.6rem}footer a{color:#e8e2d6;text-decoration:none}
+.ft small{display:block;margin-top:1.6rem;color:#bdb4a2;line-height:1.5}
+.mobilebar{position:fixed;left:0;right:0;bottom:0;z-index:65;background:color-mix(in srgb,var(--bg) 97%,transparent);border-top:1px solid var(--line);display:none;padding:.55rem .7rem calc(.55rem + env(safe-area-inset-bottom));gap:.55rem}
+.hd .btn{white-space:nowrap}.mobilebar a{flex:1;min-width:0}.mobilebar .btn{width:100%;padding:.68rem .3rem;font-size:.86rem;white-space:nowrap}
+@media(max-width:900px){nav.main{display:none}.sig-grid{grid-template-columns:1fr}.about,.rev-layout,.visit-grid,.ft{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr)}.mobilebar{display:flex}.hero{min-height:84svh}section{padding:3.2rem 0}.hd .btn{font-size:.8rem;padding:.62rem .95rem}.logo b{font-size:1.12rem}}
+</style>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<div class="demo-ribbon">Demo website — NORIKO · Preview</div>
+<header class="site"><div class="wrap hd">
+<a class="logo" href="#top"><span class="logo-mark">の</span><span><b>NORIKO</b><small>Handroll Bar · West Loop</small></span></a>
+<nav class="main"><a href="#menu">Menu</a><a href="#story">Story</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
+<div><a class="btn btn-acc" href="tel:+13123132467">(312) 313-2467</a></div>
+</div></header>
+<main id="top">
+<div class="hero"><div class="hero-bg"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1600&auto=format&fit=crop" alt="NORIKO"></div>
+<div class="wrap hero-in">
+<div class="kicker">Handroll Bar · West Loop, Chicago</div>
+<h1>Handrolls, made in front of you — one at a time.</h1>
+<p>An intimate 20-seat counter in the lower level of Perilla Fare, where chefs Billy Lim and Rhan Whang prepare inventive small plates and premium handrolls to order — toro, uni, A5 wagyu, Hokkaido scallop.</p>
+<div class="hero-rating"><span class="stars">★★★★★</span> 4.9 on OpenTable · 424 reviews</div>
+<div class="hero-cta"><a class="btn btn-light" href="#menu">See the Menu</a><a class="btn btn-acc" href="https://doordash.com/en/store/noriko-handroll-bar-chicago-41055032/" target="_blank" rel="noopener">Order on DoorDash</a></div>
+<div class="hero-badges"><span class="hbadge">📍 401 N Milwaukee Ave</span><span class="hbadge">🍣 20-seat counter</span><span class="hbadge">⭐ Home-Akase set $98</span></div>
+</div></div>
+<section><div class="wrap">
+<div class="sec-head"><div class="kicker">Signatures</div><h2>The famous Home-Akase</h2><p>NORIKO's premium handroll set — toro, uni, A5 wagyu, salmon and Hokkaido scallops — plus the sets DoorDash regulars reorder.</p></div>
+<div class="sig-grid"><article class="sig"><div class="ph"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=900&auto=format&fit=crop" alt="Home-Akase (Handroll Set)" loading="lazy"></div><div class="bd"><h3>Home-Akase (Handroll Set)</h3><p>“Our Famous Home-Akase” on DoorDash — the premium set with toro, uni, A5 wagyu, salmon and Hokkaido scallops.</p><div><span class="price">$98</span></div></div></article><article class="sig"><div class="ph"><img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?q=80&w=900&auto=format&fit=crop" alt="Doshi Set" loading="lazy"></div><div class="bd"><h3>Doshi Set</h3><p>The Doshi set — home of the Doshi Doshi, bluefin tuna toro with uni and caviar.</p><div><span class="price">$58</span></div></div></article><article class="sig"><div class="ph"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?q=80&w=900&auto=format&fit=crop" alt="Maru Set" loading="lazy"></div><div class="bd"><h3>Maru Set</h3><p>The Maru set, a DoorDash signature set.</p><div><span class="price">$48</span></div></div></article></div>
+</div></section>
+<section id="menu" style="padding-top:0"><div class="wrap">
+<div class="sec-head"><div class="kicker">Menu</div><h2>Sets, maki, nigiri & starters</h2><p>Every price below is from NORIKO's DoorDash menu — tap Order on DoorDash to check out, or take a seat at the counter.</p></div>
+<div class="tabs" id="tabs"></div>
+<div class="dish-grid" id="dishGrid"></div>
+<p class="note">Prices as listed on DoorDash, November 2026 — set directly by the restaurant.</p>
+</div></section>
+<section class="about-sec" id="story"><div class="wrap about">
+<div class="about-img"><img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?q=80&w=1000&auto=format&fit=crop" alt="NORIKO story" loading="lazy"></div>
+<div><div class="sec-head" style="margin-bottom:0"><div class="kicker">Story</div><h2>Twenty seats, below Perilla Fare</h2><p>“NORIKO handroll bar is a new sushi restaurant concept specializing in handrolls which are prepared immediately in front of you. Each unique handroll is packed with flavor and carefully crafted with high quality ingredients in this intimate underground space” (OpenTable). Chefs Billy Lim and Rhan Whang run the counter.</p></div>
+<ul class="about-points"><li><span class="dot">✓</span><p><b>Made to order, in front of you</b> — handrolls prepared immediately at the counter — never sitting, never soggy.</p></li><li><span class="dot">✓</span><p><b>The Doshi Doshi</b> — bluefin tuna toro, uni and caviar — the bite diners write home about.</p></li><li><span class="dot">✓</span><p><b>Homakase to go</b> — NORIKO's to-go box with compartments for sushi, sashimi, nori, sauces and chopsticks.</p></li></ul></div>
+</div></section>
+<section class="rev-sec" id="reviews"><div class="wrap rev-layout">
+<div><div class="sec-head" style="margin-bottom:.6rem"><div class="kicker">Reviews</div><h2>A 4.9-star counter</h2></div>
+<div class="big-score">4.9<span class="stars">★★★★★</span></div>
+<p style="color:var(--muted)">Average rating on OpenTable, from 424 verified diner reviews — Food 4.9 · Service 4.8 · Ambience 4.9.</p></div>
+<div class="rev-cards"><div class="rev"><span class="outlet">Diner review · OpenTable</span><p>Noriko is the best handroll restaurant in probably the country. Nothing comes close to the quality and flavor of their pieces.</p><small>— OpenTable verified diner, Oct 1, 2026</small></div><div class="rev"><span class="outlet">Diner favorites · OpenTable</span><p>Hotate Crudo · Nori Chips & Dip · Bluefin Tuna Akami · Bluefin Toro Caviar · A5 Wagyu Tataki</p><small>— One diner's top five at NORIKO</small></div><div class="rev"><span class="outlet">Good to know · OpenTable</span><p>Curated handroll sets — CHEFS, SIGNATURE, CLASSIC — let you sample several rolls in one sitting.</p><small>— OpenTable FAQ</small></div></div>
+</div></section>
+<section id="gallery"><div class="wrap">
+<div class="sec-head"><div class="kicker">Gallery</div><h2>Toro, uni & warm rice</h2></div>
+<div class="gal"><figure class="wide"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1000&auto=format&fit=crop" alt="NORIKO gallery photo" loading="lazy"></figure><figure class=""><img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?q=80&w=700&auto=format&fit=crop" alt="NORIKO gallery photo" loading="lazy"></figure><figure class=""><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?q=80&w=700&auto=format&fit=crop" alt="NORIKO gallery photo" loading="lazy"></figure><figure class=""><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=700&auto=format&fit=crop" alt="NORIKO gallery photo" loading="lazy"></figure><figure class=""><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=700&auto=format&fit=crop" alt="NORIKO gallery photo" loading="lazy"></figure><figure class="wide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1000&auto=format&fit=crop" alt="NORIKO gallery photo" loading="lazy"></figure></div>
+<p class="note">Photos for illustration (Unsplash).</p>
+</div></section>
+<section id="visit" style="padding-top:0"><div class="wrap">
+<div class="sec-head"><div class="kicker">Visit</div><h2>Below Perilla Fare, River West</h2></div>
+<div class="visit-grid">
+<div class="visit"><div class="ic">📍</div><h3>Address</h3><p>401 N Milwaukee Ave<br>Chicago, IL 60654</p><p style="margin-top:.6rem"><a class="map" href="https://www.google.com/maps/search/?api=1&query=NORIKO+Handroll+Bar+401+N+Milwaukee+Ave+Chicago+IL+60654" target="_blank" rel="noopener">Get directions →</a></p></div>
+<div class="visit"><div class="ic">🕚</div><h3>Hours</h3><p><b style='color:var(--ink)'>Mon–Thu, Sun</b> — 5:00 PM to 8:30 PM<br><b style='color:var(--ink)'>Fri–Sat</b> — 5:00 PM to 9:30 PM</p><p style="margin-top:.5rem">Dinner hours as listed on OpenTable (November 2026).</p></div>
+<div class="visit"><div class="ic">📞</div><h3>Contact</h3><p>Private events: reservations@norikohandrollbar.com — or call:</p><a class="tel" href="tel:+13123132467">(312) 313-2467</a><p style="margin-top:.5rem"><a class="map" href="https://www.instagram.com/norikochicago" target="_blank" rel="noopener">Instagram — @norikochicago →</a></p></div>
+</div></div></section>
+</main>
+<section class="qr-sec" id="tables"><div class="wrap">
+<div class="eyebrow">Included with your website</div>
+<h2>A QR code on every table</h2>
+<p>Guests scan the card on their table and the full menu opens on their phone. Printed table QR cards are included with your site. This one already works: scan it, it opens this very page.</p>
+<div class="qr-card"><img src="qr-noriko.png" alt="QR code opening the NORIKO website"><b>NORIKO HANDROLL BAR · CHICAGO</b><small>SCAN FOR THE MENU</small></div>
+</div></section>
+<footer><div class="wrap ft">
+<div><h4>NORIKO</h4><p>Premium handrolls at a 20-seat counter in the lower level of Perilla Fare, West Loop / River West.</p><small>Demo website by Quick Site — created for presentation purposes. Photos: Unsplash (illustrative). Prices as listed on DoorDash, November 2026. Rating and hours as listed on OpenTable.</small></div>
+<div><h4>Visit</h4><p>401 N Milwaukee Ave<br>Chicago, IL 60654<br>(312) 313-2467</p></div>
+<div><h4>Quick Links</h4><p><a href="#menu">Menu</a><br><a href="https://www.instagram.com/norikochicago" target="_blank" rel="noopener">Instagram — @norikochicago</a><br><a href="https://doordash.com/en/store/noriko-handroll-bar-chicago-41055032/" target="_blank" rel="noopener">Order on DoorDash</a></p></div>
+</div></footer>
+<div class="mobilebar"><a class="btn btn-ghost" href="tel:+13123132467">Call</a><a class="btn btn-acc" href="https://doordash.com/en/store/noriko-handroll-bar-chicago-41055032/" target="_blank" rel="noopener">Order on DoorDash</a></div>
+<script>
+const CATS=[{"cat": "Noriko Sets", "items": [{"name": "Salmon Maki Set", "desc": "A DoorDash maki set.", "price": 25}, {"name": "Maki Mania!", "desc": "A DoorDash maki set.", "price": 28}, {"name": "Premium Maki Set (Select 3)", "desc": "Select 3 \u2014 a DoorDash premium maki set.", "price": 29}, {"name": "Tuna Maki Set", "desc": "A DoorDash maki set.", "price": 33}, {"name": "Maru Set", "desc": "Noriko set.", "price": 48}, {"name": "Doshi Set", "desc": "Noriko set.", "price": 58}, {"name": "Home-Akase (Handroll Set)", "desc": "The famous premium handroll set.", "price": 98}]}, {"cat": "Maki Rolls", "items": [{"name": "Salmon Avocado Maki", "desc": "Most ordered on DoorDash.", "price": 9}, {"name": "Spicy Crab Maki", "desc": "Most ordered on DoorDash.", "price": 10}, {"name": "Noriko California Maki", "desc": "Specialty maki roll (5 pc).", "price": 10}, {"name": "Toro Scallion Maki", "desc": "Most ordered on DoorDash.", "price": 11}, {"name": "Spicy Salmon D-Luxe Maki", "desc": "Specialty maki roll (5 pc) \u2014 most ordered.", "price": 12}, {"name": "Spicy Tuna D-Luxe Maki", "desc": "Specialty maki roll (5 pc) \u2014 most ordered.", "price": 14}]}, {"cat": "Nigiri / Sashimi (2 pc)", "items": [{"name": "Salmon", "desc": "Nigiri or sashimi, 2 pieces.", "price": 12}, {"name": "Albacore Tuna", "desc": "Nigiri or sashimi, 2 pieces.", "price": 12}, {"name": "Hamachi", "desc": "Nigiri or sashimi, 2 pieces.", "price": 13}, {"name": "Akami", "desc": "Nigiri or sashimi, 2 pieces.", "price": 15}, {"name": "Hotate", "desc": "Hokkaido scallop \u2014 nigiri or sashimi, 2 pieces.", "price": 16}, {"name": "Tiger Shrimp", "desc": "Nigiri or sashimi, 2 pieces.", "price": 21}, {"name": "O-Toro", "desc": "Fatty tuna \u2014 nigiri or sashimi, 2 pieces.", "price": 23}, {"name": "Uni", "desc": "Sea urchin \u2014 nigiri or sashimi, 2 pieces.", "price": 24}, {"name": "A5 Wagyu", "desc": "Nigiri or sashimi, 2 pieces.", "price": 32}]}, {"cat": "Starters & Drinks", "items": [{"name": "Seaweed Salad", "desc": "Starter.", "price": 10}, {"name": "Nori Chips & Dip", "desc": "Most ordered on DoorDash \u2014 the creamiest edamame dip, per diners.", "price": 11}, {"name": "Side Sushi Rice", "desc": "Side.", "price": 4}, {"name": "Itoen Green Tea", "desc": "Beverage.", "price": 5.5}, {"name": "Coke / Diet Coke / Sprite", "desc": "Beverages.", "price": 4}]}];
+const grid=document.getElementById('dishGrid'),tabs=document.getElementById('tabs');
+let cur=CATS[0].cat;
+function render(){const c=CATS.find(x=>x.cat===cur);grid.innerHTML=c.items.map(it=>`<article class="dish"><h3>${it.name}</h3><p>${it.desc||''}</p><div class="row">${it.price==null?'<span class="ask">Confirmed when you call</span>':'<span class="price">$'+Number(it.price).toFixed(2)+'</span>'}</div></article>`).join('');}
+CATS.forEach(c=>{const b=document.createElement('button');b.className='tab'+(c.cat===cur?' on':'');b.textContent=c.cat;b.onclick=()=>{cur=c.cat;document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.textContent===cur));render();};tabs.appendChild(b);});
+render();
+</script>
+</body>
+</html>
